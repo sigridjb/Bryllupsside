@@ -1,9 +1,33 @@
 @charset "utf-8";
-
+@font-face {font-family: "BiographerW00-Regular";
+    src: url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.eot");
+    src: url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.svg#BiographerW00-Regular") format("svg");
+}
 html {
 	background-color: #036;
 }
 
 .header {
-	font-family: "Comic Sans MS","Sans-serif";
+	font-family: "BiographerW00-Regular","Sans-serif";
+	text-align: center;
+}
+.header h1 {
+	font-size: 3.5rem;
+	font-weight: normal;
+	margin: 0.1rem 0.2rem;
+}
+
+.header h2 {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0rem 0.2rem;
+}
+
+.meny {
+	font-family: "Sans-serif";/*"BiographerW00-Regular",*/
+	
 }
