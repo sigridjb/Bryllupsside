@@ -28,8 +28,23 @@ html {
 }
 
 .meny {
-	font-family: "Sans-serif";/*"BiographerW00-Regular",*/
-	
+	font-family: "Sans-serif";/*"BiographerW00-Regular",*/	
+}
+
+.mainMenu {
+    list-style-type: none;
+}
+
+.mainMenu li {
+    display: inline-block;
+}
+
+.mainMenu li a{
+    display: block;
+    color: darkgrey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .content-area {
@@ -50,7 +65,7 @@ html {
     padding: 0;
 }
 
-.welcome-text {
+.section-text {
     width: 100%;
     display: inline-block;
     vertical-align: top;
@@ -74,7 +89,7 @@ html {
         margin: 0 auto auto auto;
     }
 
-    .welcome-text {
+    .section-text {
         width: 65%;
     }
 
