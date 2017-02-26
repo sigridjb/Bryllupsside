@@ -13,10 +13,28 @@
                 else  document.getElementById("meny").style.display = "none";
                 visibleMenu = !visibleMenu;
             }
+
+            function toggleSection(id) {
+                var element = document.getElementById(id).getElementsByClassName("inner")[0];
+                var state = element.style.display;
+
+                var button = document.getElementById(id).getElementsByClassName("toggle-button")[0];
+
+                if(state === "block") {
+                    element.style.display = "none";
+                    button.getElementsByClassName("collapse")[0].className = "expand";
+                } else {
+                    element.style.display = "block";
+                    button.getElementsByClassName("expand")[0].className = "collapse";
+                }
+            }
         </script>
         <noscript>
             <style>
                 .main-menu {
+                    display: block;
+                }
+                .page-section .inner {
                     display: block;
                 }
             </style>
@@ -46,18 +64,23 @@
 
             <div id="what" class="page-section welcome">
                 <h1>Vi skal gifte oss!</h1>
-                <div class="welcome-text">
-                    <p>Og her håper vi du kan finne svar på alt du lurer på som har med bryllupet vårt å gjøre.</p>
-                    <p>Om det mot formodning er noe du lurer på som du ikke finner svar på her, så vær så snill å spør oss! Det er sikkert noen andre som lurer på det samme, så da kan vi få lagt det ut her så alle kan få vite svaret!</p>
-                    <p><a href="#top">Til toppen</a></p>
-                </div>
-                <div class="welcome-image">
-                    <img src="./bilder/oss.jpg" alt="Her er vi, tralalala">
+                <a class="toggle-button" href="#" onClick="toggleSection('what');" ><span class="expand"></span></a>
+                <div class="inner">
+                    <div class="welcome-text">
+                        <p>Og her håper vi du kan finne svar på alt du lurer på som har med bryllupet vårt å gjøre.</p>
+                        <p>Om det mot formodning er noe du lurer på som du ikke finner svar på her, så vær så snill å spør oss! Det er sikkert noen andre som lurer på det samme, så da kan vi få lagt det ut her så alle kan få vite svaret!</p>
+                        <p><a href="#top">Til toppen</a></p>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="./bilder/oss.jpg" alt="Her er vi, tralalala">
+                    </div>
                 </div>
             </div>
 
             <div id="prog" class="page-section program">
                 <h1>Program for dagen</h1>
+                <a class="toggle-button" href="#" onClick="toggleSection('prog');" ><span class="expand"></span></a>
+                <div class="inner">
                 <div class="program-text">
                     <p>kl 14.30: Vielse i Holmenkollen kapell.</p>
                     <p>kl 17.00: Fest på Vangen skistue.</p>
@@ -68,10 +91,13 @@
                     </div>
                     <p><a href="#top">Til toppen</a></p>
                 </div>
+                </div>
             </div>
 
             <div id="where" class="page-section directions">
                 <h1>Veibeskrivelse</h1>
+                <a class="toggle-button" href="#" onClick="toggleSection('where');" ><span class="expand"></span></a>
+                <div class="inner">
                 <div class="where-text">
                     <h4>Å komme seg til vielsen i Holmenkollen kapell:</h4>
                     <p>Kollektivt: Ta T-banen (linje 1 mot Frognerseteren), og hopp av på Holmenkollen stasjon. Derfra går du opp Holmenkollenveien (1 km). Du ser kirka på venstre side etter du har gått forbi skihoppet.</p>
@@ -107,10 +133,13 @@
                     </script>
                     <h5><a target="_blank" href="https://www.google.no/maps/dir/Holmenkollen+Kapell,+0791+Oslo/Vangen+Skistue+AS,+Enebakk/@59.8768969,10.6915454,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4641727ff17a45a7:0x9b906ba31d123493!2m2!1d10.672338!2d59.9656617!1m5!1m1!1s0x46416137a2592dc3:0x2571e8e50641fd01!2m2!1d10.9993995!2d59.8186295">Åpne i google maps</a></h5>
                 </div>
+                </div>
             </div>
 
             <div id="sleep" class="page-section accommodation">
                 <h1>Overnatting</h1>
+                <a class="toggle-button" href="#" onClick="toggleSection('sleep');" ><span class="expand"></span></a>
+                <div class="inner">
                 <div>
                     <p>Rundt festlokalet er det ubegrenset med overnattingsplasser i form av skog. Ta med et <a target="_blank" href="//s-media-cache-ak0.pinimg.com/originals/dd/ad/9d/ddad9d37f806ed3704c1b692a70d1772.jpg">telt</a>, eller sov <a target="_blank" href="https://scontent.cdninstagram.com/t51.2885-15/s320x320/e35/12346253_732799483517960_851426681_n.jpg?ig_cache_key=MTEzNDEwOTIwMTIzNDUyNTE3NA%3D%3D.2">under åpen himmel</a>. Dette er helt gratis og inkluderer tilgang på det som skulle være tilgjengelig for natta av stjernehimmel, vær og knott. Morgen-badevannet ligger bare noen hundre meter unna. Dette alternativet er brudeparets anbefaling.</p>
                     <p>De nærmeste sengene finner du på festlokalet, <a target="_blank" href="//www.vangenskistue.no/">Vangen skistue</a>. Da er det bare å tusle rett bort til rommet når du er klar for senga. De har 3-, og 6-personsrom, stort sett bestående av køyesenger. Oppredde senger og frokostbuffet er inkludert. Bestille rom eller sengeplass? Via dem eller oss? Hvem skal de kontakte?</p>
@@ -118,10 +147,13 @@
                     <p>De har også flere hoteller i både Ski (ca 20 km unna) og Oslo (ca 30 km unna). Her er det nesten bare fantasien på googlesøk som setter grenser.</p>
                     <p><a href="#top">Til toppen</a></p>
                 </div>
+                </div>
             </div>
 
             <div id="wish" class="page-section wishlist">
                 <h1>Ønskeliste</h1>
+                <a class="toggle-button" href="#" onClick="toggleSection('wish');" ><span class="expand"></span></a>
+                <div class="inner">
                 <div>
                     <p>Vi ønsker oss støtte til et av prosjektene under.</p>
                     <p>Vi ønsker oss IKKE ting og tang, og det blir ikke gavebord i bryllupet. Grunnen til dette, er at vi begge har god økonomi og at vi har mer enn det vi trenger allerede. Derimot er vi dårlige til å gi til dem som ikke er like heldige som oss, og vi ønsker derfor å bruke anledningen til dette. Vi håper dere ser den. Ønskene er prosjekter vi har en personlig tilknytning til og kan gå gode for. Vi har valgt ut flere, så dere kan velge utfra deres ståsted, og de står ikke i prioritert rekkefølge. Gratulasjonskort synes vi forresten også er stas å få.</p>
@@ -147,25 +179,34 @@
                     Gaven merkes: «Sigrid Bakke og Håkon Antonsens bryllup»</p>
                     <p><a href="#top">Til toppen</a></p>
                 </div>
+                </div>
             </div>
 
             <div id="info" class="page-section information">
                 <h1>Ymse info og kontakt</h1>
+                <a class="toggle-button" href="#" onClick="toggleSection('info');" ><span class="expand"></span></a>
+                <div class="inner">
                 <div>
                     <p>Vil du bidra med et innslag eller lignende under festen setter vi veldig stor pris på det. Da kan du ta kontakt med vår eminente toastmaster, Jon, på tlf: 45 88 52 68.</p>
                     <p>Ellers er det ikke så mye informasjon (utover det gitt i de andre seksjonene) å komme med. Skulle du likevel lure på noe er det bare å ta kontakt.</p>
-                    <p>Sigrid: 47 67 47 78, Håkon: 95 02 65 64</p>
+                    <p><em>Sigrid</em> tlf: 47 67 47 78 e-post: sigrid.j.bakke (at) gmail.com<br />
+                    <em>Håkon</em> tlf: 95 02 65 64 e-post: haakon (at) antons1.net</p>
                     <p><a href="#top">Til toppen</a></p>
+                </div>
                 </div>
             </div>
 
             <div id="news" class="page-section breaking-news">
                 <h1>Nyheter</h1>
-                <div class="news1-text">
+
+                <a class="toggle-button" href="#" onClick="toggleSection('news');" ><span class="expand"></span></a>
+                <div class="inner">
+                  <div class="news1-text">
                     <p>Nettsida er endelig ute! Men vær fortsatt beredt på mer info, og stiligere lay-out utover våren og sommeren.</p>
+                  </div>
+                  <img src="./bilder/page_out.png" alt="Hurra for nettside">
+                  <p><a href="#top">Til toppen</a></p>
                 </div>
-                <img src="./bilder/page_out.png" alt="Hurra for nettside">
-                <p><a href="#top">Til toppen</a></p>
             </div>
         </div>
     </body>
