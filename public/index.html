@@ -7,12 +7,12 @@
         <link rel="stylesheet" type="text/css" href="main.css" />
         <link rel='shortcut icon' type='image/png' href='./bilder/faviconRounded.png' />
         <script type="text/javascript">
-        var visibleMenu = false;
-        function toggleMenuMobile() {
-            if (!visibleMenu)  document.getElementById("meny").style.display = "block";
-            else  document.getElementById("meny").style.display = "none";
-            visibleMenu = !visibleMenu;
-        }
+            var visibleMenu = false;
+            function toggleMenuMobile() {
+                if (!visibleMenu)  document.getElementById("meny").style.display = "block";
+                else  document.getElementById("meny").style.display = "none";
+                visibleMenu = !visibleMenu;
+            }
         </script>
     </head>
 
@@ -20,14 +20,12 @@
         <div id="top" class="content-area">
             <div>
                 <div class="header">
-                    <h1>
-                        Sigrid & Håkon
-                    </h1>
-                    <h2>
-                        29.07.2017
-                    </h2>
+                    <hgroup class="title-headers">
+                        <h1>Sigrid & Håkon</h1>
+                        <h2>29.07.2017</h2>
+                    </hgroup>
+                    <div class="hamburger"><a href="#" onclick="toggleMenuMobile();"><img src="./bilder/hamburger.png" alt="meny" /></a></div>
                 </div>
-                <div class="hamburger"><a href="#" onclick="toggleMenuMobile();"><img src="./bilder/hamburger.png" alt="meny" /></a></div>
                 <ul id="meny" class="main-menu">
                     <li><a href="#what">Hva er dette for no?</a></li>
                     <li><a href="#prog">Program</a></li>
