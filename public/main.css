@@ -24,6 +24,16 @@ p {
     -webkit-margin-before: 0.5rem;
 }
 
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #777;
+    text-decoration: none;
+}
+
 .header {
 	font-family: "BiographerW00-Regular","Sans-serif";
 	text-align: center;
