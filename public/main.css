@@ -81,6 +81,9 @@ p {
     height: 3rem;
     position: relative;
     top: -.5rem;
+
+    /* Trengs ikke pga kollapsede seksjoner */
+    display: none;
     
 }
 
