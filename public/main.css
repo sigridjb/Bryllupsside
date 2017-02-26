@@ -68,11 +68,6 @@ html {
     color: inherit;
 }
 
-.main-menu li a:hover {
-    text-decoration: underline;
-    color: #555;
-}
-
 .header .hamburger {
     display: inline-block;
     width: 3rem;
@@ -173,10 +168,19 @@ html {
     .main-menu {
         display: block;
         background-color: transparent;
+        padding: 0;
+        margin: auto auto 1rem auto;
     }
 
     .main-menu li {
         display: inline-block;
+        margin: 0;
+        padding: .5rem;
+        font-size: 1.3rem;
+        border-bottom: solid 2px transparent;
+    }
 
+    .main-menu li:hover {
+        border-bottom: solid 2px white;
     }
 }
