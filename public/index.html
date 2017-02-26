@@ -60,33 +60,35 @@
                     <p>Med bil: Fra ring 3 (rv 150), enten: ta av på Smestad og følg Holmenkollveien nordover (6 km) til du ser kirka på venstre side etter skihoppet, eller: ta av på Gaustad og følg Slemdalsveien (som går over i Risaléen, Frognerseterveien og Ankerveien) nordover til du treffer på Holmenkollveien, og følg denne nordover til du ser kirka på venstre side etter skihoppet (5 km fra Gaustad).</p>
                     <h4>Å komme seg fra Homenkollen kapell til Vangen:</h4>
                     <p>Kollektivt: Hør med noen (/oss) om plass i en bil.</p>
-                    <p>Med bil: Kjør ned til ring 3 (rv 150) igjen, og kjør østover. Ta av til E6 sørover og følg denne. Ta avkjøring 27 mot Enebakk (rv 155) og følg denne. Ta av fortløpende (til venstre) til Bru-fjellveien, Bindingsveien og Rausjøveien. Følg Rausjøveien til parkeringsplass på Bysetermosen. BUSS OG SÅNT????</p>
-                    <p></p>
+                    <p>Med bil: Kjør ned til ring 3 (rv 150) igjen, og kjør østover. Ta av til E6 sørover og følg denne. Ta avkjøring 27 mot Enebakk (rv 155) og følg denne. Ta av fortløpende (til venstre) til Bru-fjellveien, Bindingsveien og Rausjøveien. Følg Rausjøveien til Bysetermosen parkeringsplass. BUSS OG SÅNT????</p>
                     <p><a href="#meny">Til toppen</a></p>
                 </div>
-                <div id="map" alt="Kart over kirke og festlokale"></div>
-                <script>
-                    function initMap() {
-                        var church = {lat: 59.965662, lng: 10.672338};
-                        var vangen = {lat: 59.818630, lng: 10.999399};
-                        var city_center = {lat: 59.901820, lng: 10.884275};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 10,
-                            center: city_center
-                        });
-                        var marker = new google.maps.Marker({
-                            position: church,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: vangen,
-                            map: map
-                        });
-                    }
-                </script>
-                <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcjN-oPt11Ljc0CyHlbUMywuAydTafP-M&callback=initMap">
-                </script>
+                <div class="google-maps">
+                    <div id="map" alt="Kart over kirke og festlokale"></div>
+                    <script>
+                        function initMap() {
+                            var church = {lat: 59.965662, lng: 10.672338};
+                            var vangen = {lat: 59.818630, lng: 10.999399};
+                            var city_center = {lat: 59.901820, lng: 10.884275};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                                zoom: 10,
+                                center: city_center
+                            });
+                            var marker = new google.maps.Marker({
+                                position: church,
+                                map: map
+                            });
+                            var marker = new google.maps.Marker({
+                                position: vangen,
+                                map: map
+                            });
+                        }
+                    </script>
+                    <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcjN-oPt11Ljc0CyHlbUMywuAydTafP-M&callback=initMap">
+                    </script>
+                    <h5>Åpne i google maps</h5>
+                </div>
             </div>
 
             <div id="sleep" class="page-section accommodation">
