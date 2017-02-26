@@ -13,6 +13,8 @@
 html {
 	background-color: #036;
     font-family: "Calibri","sans-serif";
+    background: url("./bilder/plankebakgrunn.jpg") no-repeat center center fixed;
+    background-size: fill;
 }
 
 .header {
