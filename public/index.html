@@ -6,6 +6,14 @@
         </title>
         <link rel="stylesheet" type="text/css" href="main.css" />
         <link rel='shortcut icon' type='image/png' href='./bilder/faviconRounded.png' />
+        <script type="text/javascript">
+        var visibleMenu = false;
+        function toggleMenuMobile() {
+            if (!visibleMenu)  document.getElementById("meny").style.display = "block";
+            else  document.getElementById("meny").style.display = "none";
+            visibleMenu = !visibleMenu;
+        }
+        </script>
     </head>
 
     <body>
@@ -19,6 +27,7 @@
                         29.07.2017
                     </h2>
                 </div>
+                <div class="hamburger"><a href="#" onclick="toggleMenuMobile();"><img src="./bilder/hamburger.png" alt="meny" /></a></div>
                 <ul id="meny" class="main-menu">
                     <li><a href="#what">Hva er dette for no?</a></li>
                     <li><a href="#prog">Program</a></li>
