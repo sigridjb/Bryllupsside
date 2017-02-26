@@ -7,8 +7,12 @@
     url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.svg#BiographerW00-Regular") format("svg");
 }
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans');
+
 html {
 	background-color: #036;
+    font-family: "Calibri","sans-serif";
 }
 
 .header {
@@ -29,7 +33,6 @@ html {
 
 .main-menu {
     list-style-type: none;
-    font-family: "BiographerW00-Regular","Sans-serif";
 }
 
 .main-menu li {
@@ -58,6 +61,7 @@ html {
 }
 
 .page-section h1 {
+    font-family: "serif";
     margin: 0;
     padding: 0;
 }
