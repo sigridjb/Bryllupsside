@@ -13,6 +13,8 @@
 html {
 	background-color: #036;
     font-family: "Calibri","sans-serif";
+    background: url("./bilder/plankebakgrunn.jpg") no-repeat center center fixed;
+    background-size: fill;
 }
 
 .header {
@@ -41,10 +43,16 @@ html {
 
 .main-menu li a{
     display: block;
-    color: darkgrey;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
+}
+
+.main-menu li a:hover {
+    text-decoration: underline;
+    color: #555;
 }
 
 .content-area {
