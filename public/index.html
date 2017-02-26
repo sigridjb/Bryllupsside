@@ -47,16 +47,40 @@
                 <div class="program-text">
                     <p>kl 14.30: Vielse i Holmenkollen kapell.</p>
                     <p>kl 17.00: Fest på Vangen skistue.</p>
+                    <p></p>
                     <p><a href="#meny">Til toppen</a></p>
                 </div>
             </div>
 
             <div id="where" class="page-section directions">
                 <h1>Veibeskrivelse</h1>
-                <div>
+                <div class="where-text">
                     <p>Opp til kirka, ned til skauen.</p>
                     <p><a href="#meny">Til toppen</a></p>
                 </div>
+                <div id="map" alt="Kart over kirke og festlokale"></div>
+                <script>
+                    function initMap() {
+                        var church = {lat: 59.965662, lng: 10.672338};
+                        var vangen = {lat: 59.818630, lng: 10.999399};
+                        var city_center = {lat: 59.901820, lng: 10.884275};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 10,
+                            center: city_center
+                        });
+                        var marker = new google.maps.Marker({
+                            position: church,
+                            map: map
+                        });
+                        var marker = new google.maps.Marker({
+                            position: vangen,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcjN-oPt11Ljc0CyHlbUMywuAydTafP-M&callback=initMap">
+                </script>
             </div>
 
             <div id="sleep" class="page-section accommodation">
