@@ -1,3 +1,4 @@
+// Used to toggle the main menu on mobile
 var visibleMenu = false;
 function toggleMenuMobile() {
     if (!visibleMenu) document.getElementById("meny").style.display = "block";
@@ -5,6 +6,7 @@ function toggleMenuMobile() {
     visibleMenu = !visibleMenu;
 }
 
+// Used to toggle the content blocks
 function toggleSection(id) {
     var element = document.getElementById(id).getElementsByClassName("inner")[0];
     var state = element.style.display;
@@ -20,6 +22,7 @@ function toggleSection(id) {
     }
 }
 
+// Initializes the map in the "directions" section
 function initMap() {
     var church = { lat: 59.965662, lng: 10.672338 };
     var vangen = { lat: 59.818630, lng: 10.999399 };
