@@ -200,7 +200,7 @@ p {
     vertical-align: top;
 }
 
-.page-section.breaking-news img {
+.page-section.breaking-news .inner img {
     display: inline-block;
     width: 100%;
     vertical-align: top;
@@ -284,7 +284,7 @@ p {
         width: 55%;
     }
 
-    .page-section.breaking-news img {
+    .page-section.breaking-news .innner img {
         width: 40%;
     }
 }
