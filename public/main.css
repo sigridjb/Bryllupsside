@@ -114,10 +114,6 @@ p {
     vertical-align: top;
 }
 
-.program-text{
-    display: inline-block;
-}
-
 .welcome-image{
     width: 100%;
     display: inline-block;
@@ -127,6 +123,10 @@ p {
 
 .welcome-image img {
     width: 100%;
+}
+
+.program-text{
+    display: inline-block;
 }
 
 .location-pics {
@@ -158,6 +158,18 @@ p {
     padding: 0.8rem;
     display: inline-block;
     background-color:#dfecdf;
+}
+
+.news1-text {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.page-section.breaking-news img {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
 }
 
 @media (min-width: 40rem) {
@@ -227,5 +239,13 @@ p {
     .google-maps {
         width: 45%;
         margin-left: 2.5%;
+    }
+
+    .news1-text {
+        width: 55%;
+    }
+
+    .page-section.breaking-news img {
+        width: 40%;
     }
 }
