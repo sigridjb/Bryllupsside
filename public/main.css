@@ -112,8 +112,17 @@ html {
 }
 
 .google-maps {
+    width: 100%;
     display: inline-block;
+    text-align: right;
 }
+
+.google-maps h5 {
+    padding: 0.8rem;
+    display: inline-block;
+    background-color:#dfecdf;
+}
+
 @media (min-width: 40rem) {
     .content-area {
         max-width: 60rem;
