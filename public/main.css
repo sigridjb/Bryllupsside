@@ -20,6 +20,7 @@ html {
 h4 {
     margin-bottom: 0rem;
 }
+
 p {
     margin-top: 0.5rem;
 }
@@ -296,5 +297,9 @@ a:hover {
 
     .page-section.breaking-news .innner img {
         width: 40%;
+    }
+
+    .page-section .toggle-button {
+        display: none;
     }
 }
