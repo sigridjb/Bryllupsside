@@ -13,10 +13,29 @@
                 else  document.getElementById("meny").style.display = "none";
                 visibleMenu = !visibleMenu;
             }
+
+            function toggleSection(id) {
+                var element = document.getElementById(id).getElementsByClassName("inner")[0];
+                var state = element.style.display;
+
+                var button = document.getElementById(id).getElementsByClassName("toggle-button")[0];
+
+                if(state === "block") {
+                    element.style.display = "none";
+                    button.getElementsByClassName("collapse")[0].className = "expand";
+                } else {
+                    element.style.display = "block";
+                    button.getElementsByClassName("expand")[0].className = "collapse";
+                }
+            }
         </script>
         <noscript>
             <style>
                 .main-menu {
+                    display: block;
+                }
+
+                .page-section .inner {
                     display: block;
                 }
             </style>
@@ -46,13 +65,16 @@
 
             <div id="what" class="page-section welcome">
                 <h1>Vi skal gifte oss!</h1>
-                <div class="welcome-text">
-                    <p>Og her håper vi du kan finne svar på alt du lurer på som har med bryllupet vårt å gjøre.</p>
-                    <p>Om det mot formodning er noe du lurer på som du ikke finner svar på her, så vær så snill å spør oss! Det er sikkert noen andre som lurer på det samme, så da kan vi få lagt det ut her så alle kan få vite svaret!</p>
-                    <p><a href="#top">Til toppen</a></p>
-                </div>
-                <div class="welcome-image">
-                    <img src="./bilder/oss.jpg" alt="Her er vi, tralalala">
+                <a class="toggle-button" href="#" onClick="toggleSection('what');" ><span class="expand"></span></a>
+                <div class="inner">
+                    <div class="welcome-text">
+                        <p>Og her håper vi du kan finne svar på alt du lurer på som har med bryllupet vårt å gjøre.</p>
+                        <p>Om det mot formodning er noe du lurer på som du ikke finner svar på her, så vær så snill å spør oss! Det er sikkert noen andre som lurer på det samme, så da kan vi få lagt det ut her så alle kan få vite svaret!</p>
+                        <p><a href="#top">Til toppen</a></p>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="./bilder/oss.jpg" alt="Her er vi, tralalala">
+                    </div>
                 </div>
             </div>
 
