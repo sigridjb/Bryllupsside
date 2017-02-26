@@ -8,29 +8,8 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link rel='shortcut icon' type='image/png' href='./bilder/faviconRounded.png' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript">
-        var visibleMenu = false;
-        function toggleMenuMobile() {
-            if (!visibleMenu) document.getElementById("meny").style.display = "block";
-            else document.getElementById("meny").style.display = "none";
-            visibleMenu = !visibleMenu;
-        }
-
-        function toggleSection(id) {
-            var element = document.getElementById(id).getElementsByClassName("inner")[0];
-            var state = element.style.display;
-
-            var button = document.getElementById(id).getElementsByClassName("toggle-button")[0];
-
-            if (state === "block") {
-                element.style.display = "none";
-                button.getElementsByClassName("collapse")[0].className = "expand";
-            } else {
-                element.style.display = "block";
-                button.getElementsByClassName("expand")[0].className = "collapse";
-            }
-        }
-    </script>
+    <script type="text/javascript" src="./scripts.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcjN-oPt11Ljc0CyHlbUMywuAydTafP-M&callback=initMap"></script>
     <noscript>
         <style>
             .main-menu {
@@ -122,28 +101,6 @@
                 </div>
                 <div class="google-maps">
                     <div id="map" alt="Kart over kirke og festlokale"></div>
-                    <script>
-                                                       function initMap() {
-                                                           var church = { lat: 59.965662, lng: 10.672338 };
-                                                           var vangen = { lat: 59.818630, lng: 10.999399 };
-                                                           var city_center = { lat: 59.901820, lng: 10.884275 };
-                                                           var map = new google.maps.Map(document.getElementById('map'), {
-                                                               zoom: 10,
-                                                               center: city_center
-                                                           });
-                                                           var marker = new google.maps.Marker({
-                                                               position: church,
-                                                               map: map
-                                                           });
-                                                           var marker = new google.maps.Marker({
-                                                               position: vangen,
-                                                               map: map
-                                                           });
-                                                       }
-                    </script>
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcjN-oPt11Ljc0CyHlbUMywuAydTafP-M&callback=initMap">
-
-                    </script>
                     <h5><a target="_blank" href="https://www.google.no/maps/dir/Holmenkollen+Kapell,+0791+Oslo/Vangen+Skistue+AS,+Enebakk/@59.8768969,10.6915454,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x4641727ff17a45a7:0x9b906ba31d123493!2m2!1d10.672338!2d59.9656617!1m5!1m1!1s0x46416137a2592dc3:0x2571e8e50641fd01!2m2!1d10.9993995!2d59.8186295">Åpne i google maps</a></h5>
                 </div>
             </div>
