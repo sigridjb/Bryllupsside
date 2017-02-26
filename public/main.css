@@ -129,6 +129,13 @@ p {
     width: 100%;
 }
 
+.location-pics {
+    display: inline-block;
+}
+.location-pics img {
+    width: 100%;
+}
+
 .where-text {
     display: inline-block;
 }
@@ -166,6 +173,10 @@ p {
     .welcome-image {
         width: 30%;
         margin-left: 2.5%;
+    }
+
+    .location-pics img {
+    width: 45%;
     }
 
     .header {
