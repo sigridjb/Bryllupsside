@@ -18,10 +18,10 @@ html {
 }
 
 h4 {
-    -webkit-margin-after: 0rem;
+    margin-bottom: 0rem;
 }
 p {
-    -webkit-margin-before: 0.5rem;
+    margin-top: 0.5rem;
 }
 
 a {
