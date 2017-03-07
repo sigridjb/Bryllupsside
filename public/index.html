@@ -25,7 +25,7 @@
         var sec = Math.floor((dist % (1000*60)) / 1000);
 
         // Display count down:
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "t " + min + "min " + sec + "sek ";
+        document.getElementById("countdown").innerHTML = "Om ganske nøyaktig " + days + " dager, " + hours + " timer, " + min + " minutter og " + sec + " sekunder.";
 
         //If count down is finished:
         if (dist<0) {
@@ -57,7 +57,6 @@
                 <hgroup class="title-headers">
                     <h1>Sigrid & Håkon</h1>
                     <h2>29.07.2017</h2>
-                    <h1 id="countdown"></h1>
                 </hgroup>
                 <div class="hamburger">
                     <a href="#" onclick="toggleMenuMobile();"><img src="./bilder/hamburger.png" alt="meny" /></a>
@@ -79,6 +78,8 @@
             <a class="toggle-button" href="#" onClick="toggleSection('what');"><span class="expand"></span></a>
             <div class="inner">
                 <div class="welcome-text">
+                    <p id="countdown"></p>
+                    <p> </p>
                     <p>Og her håper vi du kan finne svar på alt du lurer på som har med bryllupet vårt å gjøre.</p>
                     <p>Om det mot formodning er noe du lurer på som du ikke finner svar på her, så vær så snill å spør oss!
                         Det er sikkert noen andre som lurer på det samme, så da kan vi få lagt det ut her så alle kan få
