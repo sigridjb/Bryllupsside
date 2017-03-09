@@ -30,7 +30,6 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-
 // Used to toggle the content blocks
 function toggleSection(id) {
     var element = document.getElementById(id).getElementsByClassName("inner")[0];
