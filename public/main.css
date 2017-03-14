@@ -236,7 +236,8 @@ a:hover {
     }
 
     .location-pics img {
-    width: 45%;
+        width: auto; /*45%;*/
+        height: 25rem;
     }
 
     .header {
