@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 @charset "utf-8";
 @font-face {font-family: "BiographerW00-Regular";
     src: url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.eot");
@@ -10,12 +11,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans|Open+Sans');
 
+
 html {
 	background-color: #036;
     font-family: "Calibri","sans-serif";
     background: url("./bilder/grefsenkollen.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
 
 h4 {
     margin-bottom: 0rem;
@@ -117,7 +120,7 @@ a:hover {
 }
 
 .page-section h1 {
-    font-family: "serif";
+    font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
     display: inline-block;
