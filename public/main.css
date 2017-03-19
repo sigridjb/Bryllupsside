@@ -134,6 +134,7 @@ a:hover {
 
 .page-section h1 a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .page-section h1 a:hover {
