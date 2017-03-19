@@ -126,6 +126,7 @@ a:hover {
     display: inline-block;
     width: 80%;
     vertical-align: top;
+    font-size: 6mm;
 }
 
 .page-section .pc-title{
@@ -134,7 +135,6 @@ a:hover {
 
 .page-section h1 a {
     text-decoration: none;
-    font-size: 23px;
 }
 
 .page-section h1 a:hover {
@@ -276,6 +276,7 @@ a:hover {
     }
 
     .page-section .pc-title{
+        font-size: 2em;
         display: inline-block;
     }
 
