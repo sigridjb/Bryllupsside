@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @charset "utf-8";
+/***
+ * This font is not available from here anyomre. Leaving this here to be able to
+ * quickly readd it if it becomes available again
+ ***
 @font-face {font-family: "BiographerW00-Regular";
     src: url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.eot");
     src: url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.eot?#iefix") format("embedded-opentype"),
@@ -8,6 +12,9 @@
     url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.ttf") format("truetype"),
     url("//db.onlinewebfonts.com/t/79c46da5a7b9412a9a35cc5cca52cb56.svg#BiographerW00-Regular") format("svg");
 }
+ ***
+ *
+ ***/
 @font-face {font-family: "Bilbo";
 src: url("fonts/Bilbo-Regular.ttf")}
 
@@ -40,6 +47,11 @@ a:hover {
     text-decoration: none;
 }
 
+/***
+ * Font-info here isn't used for the time being because the site we found the font on
+ * disappeared. Leaving it here so we have the ability to reuse quickly if the font comes
+ * back up
+ ***/
 .header {
 	font-family: "BiographerW00-Regular","Bilbo","Sans-serif";
 	text-align: center;
@@ -47,6 +59,11 @@ a:hover {
     padding: 1rem;
     vertical-align: middle;
     position: relative;
+}
+
+.header .header-image {
+    height: 5rem;
+    width: auto;
 }
 
 .title-headers {
@@ -257,6 +274,12 @@ a:hover {
 
     .header {
         background-color: transparent;
+        padding-bottom: 0;
+    }
+
+    .header .header-image {
+        height: 10rem;
+        width: auto;
     }
 
     .header .hamburger {
