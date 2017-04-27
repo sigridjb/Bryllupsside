@@ -138,8 +138,11 @@ a:hover {
     padding: 2rem;
 }
 
-.page-section h1 {
+.page-section h1, h2, h3 {
     font-family: 'Merriweather', serif;
+}
+
+.page-section h1 {
     margin: 0;
     padding: 0;
     display: inline-block;
@@ -240,10 +243,18 @@ a:hover {
     background-color:#dfecdf;
 }
 
-.news1-text {
+.news-box {
+    margin-bottom: 3em;
+}
+
+.news-text {
     display: inline-block;
     width: 100%;
     vertical-align: top;
+}
+
+.news-text h3 {
+    margin-top: 0;
 }
 
 .page-section.breaking-news .inner img {
@@ -342,7 +353,7 @@ a:hover {
         margin-left: 2.5%;
     }
 
-    .news1-text {
+    .news-text {
         width: 55%;
     }
 
