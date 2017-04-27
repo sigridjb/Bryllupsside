@@ -355,6 +355,7 @@ a:hover {
 
     .news-text {
         width: 55%;
+        padding-right: 2rem;
     }
 
     .page-section.breaking-news .inner img {
