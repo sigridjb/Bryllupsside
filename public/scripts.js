@@ -28,7 +28,6 @@ var x = setInterval(function() {
     if (hours==1) hourstr = " time, ";
     if (min==1) minstr = " minutt og ";
     if (sec==1) secstr = " sekund.";
-    else document.getElementById("meny").style.display = "none";
     // Display count down:
     document.getElementById("countdown").innerHTML = "Om ganske nøyaktig " + days + daystr + hours + hourstr + min + minstr + sec + secstr;
 
