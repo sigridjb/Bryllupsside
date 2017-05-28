@@ -19,9 +19,18 @@ var x = setInterval(function() {
     var hours = Math.floor((dist % (1000*60*60*24)) / (1000*60*60));
     var min = Math.floor((dist % (1000*60*60)) / (1000*60));
     var sec = Math.floor((dist % (1000*60)) / 1000);
-
+    //make time names plural or singular
+    var daystr = " dager, ";
+    var hourstr = " timer, ";
+    var minstr = " minutter og ";
+    var secstr = " sekunder.";
+    if (days==1) daystr = " dag, ";
+    if (hours==1) hourstr = " time, ";
+    if (min==1) minstr = " minutt og ";
+    if (sec==1) secstr = " sekund.";
+    else document.getElementById("meny").style.display = "none";
     // Display count down:
-    document.getElementById("countdown").innerHTML = "Om ganske nøyaktig " + days + " dager, " + hours + " timer, " + min + " minutter og " + sec + " sekunder.";
+    document.getElementById("countdown").innerHTML = "Om ganske nøyaktig " + days + daystr + hours + hourstr + min + minstr + sec + secstr;
 
     //If count down is finished:
     if (dist<0) {
