@@ -263,6 +263,19 @@ a:hover {
     vertical-align: top;
 }
 
+.shortlist__list {
+    text-align: left;
+}
+
+.shortlist__list li {
+    margin: 1em auto;
+}
+
+.shortlist__listtext {
+    font-size: initial;
+    line-height: initial;
+}
+
 @media (min-width: 40rem) {
     .content-area {
         max-width: 60rem;
@@ -344,6 +357,10 @@ a:hover {
         display: block;
     }
 
+    .page-section .inner-open {
+        display: block;
+    }
+
     .where-text {
         width: 50%;
     }
@@ -366,3 +383,4 @@ a:hover {
         display: none;
     }
 }
+

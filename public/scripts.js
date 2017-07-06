@@ -39,9 +39,9 @@ var x = setInterval(function() {
 }, 1000);
 
 // Used to toggle the content blocks
-function toggleSection(e, id) {
+function toggleSection(e, id, className = "inner") {
     e.preventDefault();
-    var element = document.getElementById(id).getElementsByClassName("inner")[0];
+    var element = document.getElementById(id).getElementsByClassName(className)[0];
     var state = element.style.display;
 
     var button = document.getElementById(id).getElementsByClassName("toggle-button")[0];
@@ -53,6 +53,10 @@ function toggleSection(e, id) {
         element.style.display = "block";
         button.getElementsByClassName("expand")[0].className = "collapse";
     }
+}
+
+function toggleSectionShortlist(e, id) {
+    toggleSection(e, id, "inner-open");
 }
 
 // Google Analytics
