@@ -33,8 +33,8 @@ var x = setInterval(function() {
 
     //If count down is finished:
     if (dist<0) {
+        document.getElementById("countdown").innerHTML = "Nå er vi gift!";
         clearInterval(x);
-        document.getEementById("countdown").innerHTML = "Nå er vi gift!";
     }
 }, 1000);
 
